@@ -17,7 +17,7 @@ cursorObj.execute(" INSERT INTO Movies VALUES ('Five Feet Apart','Cole Sprouse',
 
 cursorObj.execute("SELECT * FROM Movies")
 r1=cursorObj.fetchall()
-cursorObj.execute("SELECT * FROM Movies WHERE actor='Cole Sprouse' ")
+cursorObj.execute("SELECT * FROM Movies WHERE actress='Haley Lu Richardson' ")
 r2=cursorObj.fetchall()
 
 print(r1)
