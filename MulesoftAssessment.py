@@ -3,8 +3,8 @@ import sqlite3
 con=sqlite3.connect('moviesdatabase.db')
 cursorObj=con.cursor()
 
-query_command=""" CREATE TABLE IF NOT EXISTS Movies(name TEXT PRIMARY KEY,actor TEXT,actress TEXT,year INTEGER,director TEXT) """
-cursorObj.execute(query_command)
+sql=""" CREATE TABLE IF NOT EXISTS Movies(name TEXT PRIMARY KEY,actor TEXT,actress TEXT,year INTEGER,director TEXT) """
+cursorObj.execute(sql)
 
 cursorObj.execute(" INSERT INTO Movies VALUES ('Om Shanti Om','Shah Rukh Khan','Deepika Padukone',2007,'Farah Khan')")
 cursorObj.execute(" INSERT INTO Movies VALUES ('The Sky Is Pink','Farhan Akhtar','Priyanka Chopra Jonas',2019,'Shonali Bose')")
