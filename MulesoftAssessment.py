@@ -22,3 +22,6 @@ r2=cursorObj.fetchall()
 
 print(r1)
 print(r2)
+
+con.commit()
+con.close()
